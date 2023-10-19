@@ -1,17 +1,46 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mundo Senai</title>
-  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-  <script src="js.js"></script>
-</head>
-<body>
-  <header></header>
-  <button onclick="cadastro()">Cadastre aqui</button>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mundo Senai</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <script src="js.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div id="logo"></div>
 
-  <button onclick="numSort()">Qual o numero sorteado?</button>
-  
-</body>
+      <h1 id="title">Mundo Senai</h1>
+    </header>
+
+
+    
+    <nav>
+
+      <div class="espacoButao">
+        <p id="paragrafo-butao">Cadastre um nome aqui</p>
+        <button class="butao" onclick="cadastro()">Click</button>
+      </div>
+
+      <div class="espacoButao">
+        <p id="paragrafo-butao">Qual o numero sorteado?</p>
+        <button class="butao" onclick="numSort()">Click</button>
+      </div>
+
+      <div class="espacoButao">
+        <p id="paragrafo-butao"> Limpar conteudo tela </p>
+        <button class="butao" onclick="limpar()">Click</button>
+      </div>
+
+<p id="saida"></p>
+
+    </nav>
+<main>
+
+
+</main>
+
+  </body>
 </html>

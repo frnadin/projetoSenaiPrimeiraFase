@@ -1,4 +1,96 @@
 body{
-  font-family: 'Courier New', Courier, monospace;
+  font-family: 'Courier New', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   margin-left: 20px;
+   background-color: #dff4f6;  /*lavanda*/
+   width: auto max-content;
+   height: auto max-content;
+   margin: 0px;
+   font-family: FonteResto
+}
+
+@font-face {
+  font-family: FonteTitulo;
+  src: url(./fonts/Roboto-BlackItalic.ttf);
+}
+
+@font-face {
+  font-family: FonteResto;
+  src: url(./fonts/Roboto-Regular.ttf);
+}
+
+header{
+  background-color: #175ca9;
+  text-align: center;
+  width: auto max-content;
+  height: 80px;
+  color: white;
+  box-shadow: black;
+  box-shadow: 1px 2px 8px black;
+}
+
+#logo{
+  width: 145px;
+  height: 37px;
+  background-image: url(img/logos_senai_branco_b.png);
+  background-size: cover;
+  display: flex;
+  margin: 15px;
+  float: left;
+  position: initial;
+  margin-left: 15px;
+  margin-right: 15px;  
+}
+
+#title{
+  align-items: center;
+  display: inline-block;
+  padding-right: 200px;
+  font-family: FonteTitulo;
+  
+}
+
+nav{
+  width: 180px;
+  height: 100vh;
+  /* height: max-content; */
+  display: block;
+  background-color: #171591d6;
+  float: left;
+  box-shadow: inset 1px 1px 20px #00000061;
+  text-align: center;
+}
+
+.butao {
+  transition-duration: 0.4s;
+    cursor: pointer;
+    background-color: white;
+    text-align: center;
+
+}
+.butao:hover {
+  background-color: #175ca9;
+  color: white;
+}
+
+
+
+
+#paragrafo-butao{
+  display: inline-block;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.espacoButao{
+  background-color: #c6f5fa;
+    width: 140px;
+    height: 80px;
+    margin: 15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 5px;
+    border-radius: 12px;
+    float: left;
+    box-shadow: -5px 5px 6px #000000d9; 
 }
