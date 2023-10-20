@@ -1,5 +1,6 @@
 
 let participantes = []
+let participantesCadastrados = []
 
 for(var i=0;i!=100;i++){
   participantes.push("null")
@@ -10,19 +11,25 @@ console.log(participantes.length)
 
 
 function cadastro() {
-  let indiceCadastro = Number(prompt("num de 0 a 99")) 
+
+  let indiceCadastro = Number(prompt("Escolha um numero de 0 a 99.")) 
+ 
   if(indiceCadastro<100){
-  let nomeCadastrado = prompt("Digite o nome do participante que vc quer cadastrar.")
-  
-  participantes[indiceCadastro]=nomeCadastrado
-  console.log(participantes)
-  alert("Cadastrado!")
+    let nomeCadastrado = prompt("Digite o nome do participante que você quer cadastrar.")
+    participantes[indiceCadastro]=nomeCadastrado
+    console.log(participantes)
+         alert("Cadastrado!")
+
+        participantesCadastrados.unshift(nomeCadastrado)
+
+        document.getElementById("br").innerHTML = participantesCadastrados.join("<br>")
+
 }else{
   alert("Entrada invalida!")
 }
   }
 
-  function numSort(){//ARRUMAR  CASO SELECIONE MAIOR QUE 0100
+  function numSort(){
     let sorte = Number(prompt("Qual o numero sorteado?"))
     if(sorte<100){
     let sorteado = participantes[sorte] 
@@ -33,7 +40,11 @@ function cadastro() {
   }
   
   function limpar(){  
-    return document.getElementById("saida").innerHTML = ""
+  document.getElementById("saida").innerHTML = ""
+
+
   }
+
+
   
  
