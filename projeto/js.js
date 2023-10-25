@@ -15,7 +15,7 @@ function cadastro() {
 
   let indiceCadastro = Number(prompt("Escolha um numero de 0 a 99.")) 
  
-  if(indiceCadastro<100){
+  if(indiceCadastro<100 & indiceCadastro>0){
     let nomeCadastrado = prompt("Digite o nome do participante que você quer cadastrar.")
 
     if(participantes[indiceCadastro]=="null"){
