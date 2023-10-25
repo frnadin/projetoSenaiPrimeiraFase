@@ -51,22 +51,38 @@ header{
 
 #esquerdo{
   width: 180px;
-  height: 89vh;
-  /* height: max-content; */
-  display: block;
+  height: inherit;
+  min-height: 90vh;
+    display: block;
   background-color: #171591d6;
   float: left;
   box-shadow: inset 1px 1px 20px #00000061;
   text-align: center;
 }
 
+.espacoCadstradosEsquerdo{
+  background-color: #c6f5fa;
+    width: 140px;
+    height: auto max-content;
+    margin: 15px;
+    margin-top: 75px;
+    margin-bottom: 15px;
+    padding: 5px;
+    border-radius: 12px;
+    float: left;
+    box-shadow: -5px 5px 6px #000000d9;
+    z-index: -1;
+    position: absolute;
+}
+
 #direito{
   width: 180px;
-  height: 89vh;
+  height: inherit;
+  min-height: 90vh;
   /* height: max-content; */
   display: block;
   background-color: #171591d6;
-  float: right  ;
+  float: right;
   box-shadow: inset 1px 1px 20px #00000061;
   text-align: center;
 
@@ -75,13 +91,18 @@ header{
 .butao {
   transition-duration: 0.4s;
     cursor: pointer;
-    background-color: white;
+    background-color: white;  
     text-align: center;
-
+    border-radius: 5px;
+    margin: 10px;
+   
 }
 .butao:hover {
   background-color: #175ca9;
   color: white;
+  padding: 3px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 
@@ -130,4 +151,29 @@ max-width: max-content;
   background-color: black;
   /* float: left;   */
   /* margin: 0px; */
+}
+#aaa{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: auto max-content;
+  height: auto max-content;
+  padding: 35px;
+  background-color: #171591d6;
+  visibility: hidden;
+  border-radius: 20px;
+  box-shadow: -5px 5px 6px #000000d9;
+  color: white;
+}
+
+#realGif{
+
+  padding-top: px;
+  text-align: center;
+   width: 50px;
+  height: 50px;
+  width: 80px;
+  height: 100px;
+  
 }
